@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before 
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+
+html 
+  // This defines what 1rem is
+  font-size: 62.5% //1 rem = 10px 10px/16px = 62.5%
+
+  +respond(tab-landscape)  // width < 1200?
+    font-size: 56.25% //1 rem = 9px, 9/16 = 50%
+    
+
+  +respond(tab-portrait)  // width < 900?
+    font-size: 50% //1 rem = 8px, 8/16 = 50%
+    
+    
+  +respond(large-desktop) 
+    font-size: 75% //1rem = 12, 12/16
+    
+
+
+body 
+    box-sizing: border-box
+
+    +respond(tab-portrait) 
+        padding: 0
+    
+
+
+::selection 
+    background-color: color-primary
+    color: color-white
+
+
+body 
+  font-family: "Open Sans", sans-serif
+  font-size: 1.4rem
+  font-weight: 400
+  line-height: 1.7
+  color: #2f2f2f
+  background: #f6f3f2
+  +respond(mobile)
+    font-size: 1.6rem
+
+.container 
+  max-width: 120rem
+  margin: 0 auto
+  
+.single
+  max-width: 76.8rem
+  margin: 0 auto
+   	
+.main
+	padding: 6rem 3rem
+	
+.content
+	//padding: 2rem 0
+	
+.post 
+	margin-bottom: 40px
+	
+.sidebar
+	//padding: 0 0 2rem 4rem
+	
+img
+  max-width: 100%
+	
+.back__top
+  background: #bfbfbf url(../images/back_top.png) no-repeat 50% 50%;
+  bottom: 40px;
+  visibility: hidden;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  width: 40px;
+  z-index: 9999;
+  opacity: 0;
+  cursor: pointer;
+
+.grid
+  display: grid
+

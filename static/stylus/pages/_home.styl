@@ -1,0 +1,99 @@
+.main-container
+	//grid-template-columns: repeat(12, minmax(0, 1fr))
+	grid-template-columns: 70% 1fr
+	grid-gap: 50px
+	+respond(tab-portrait)
+		display: flex
+
+.article--title
+	font-size: calc(1.2rem + .2vw)
+	font-weight: 400
+	padding-bottom: 10px
+	border-bottom: 1px dashed #ddd
+	+respond(mobile)
+		font-size: calc(1.2rem + .5vw)
+
+.post--grid__container
+	//grid-column: 1 / 9
+	grid-gap: 10px
+	
+.sidebar
+	//grid-column: 9 / -1
+
+.post--grid
+	position: relative
+	//padding: 2rem
+	//transition: all .2s ease-out
+	width: 100%
+	height: 100%
+	&__content-wrapper
+		position: relative
+		z-index: 1
+		display: grid
+		grid-template-columns: 18% 1fr
+		grid-gap: 3rem
+		+respond(mobile)
+			display: flex
+			flex-direction: column
+	&__image
+		display: inherit
+		align-items: flex-end
+		justify-content: center
+		+respond(tab-portrait)
+			margin-bottom: 4rem
+		img
+			max-height: 20rem
+		a
+			display: inherit
+	&__body
+		display: flex
+		flex-direction: column
+		+respond(tab-portrait)
+			text-align: center
+	&__title
+		font-size: calc(2.4rem + 0.20vw)
+	&__content
+		display: flex
+		flex-grow: 1
+		margin: 1rem 0
+		+respond(tab-portrait)
+			font-size: calc(2rem + 0.20vw)
+			margin-bottom: 3rem
+	p
+		font-size: calc(1.2rem + .2vw)
+	&__readmore
+		//background: #2da2c5
+		color: inherit
+		text-transform: capitalize
+		padding: 0.5rem 1rem
+		align-self: start
+		border: 1px solid #7f7a7a
+		+respond(mobile)
+			align-self: auto
+			padding: 1rem
+		&::before
+			background: #0da6d4
+			border-color: #0da6d4
+		i:before
+			color: #2f2f2f
+		&:hover
+			border-color: #0da6d4
+			color: #fff
+			i:before
+				color: #fff
+		
+
+		
+	&:hover
+		.post--grid__link
+			color: basecolor
+		// &::before 
+		// 	background-color: #fff;
+		// 	border-radius: 2px
+		// 	transform: scale(1.02)
+		// 	box-shadow: 0 0 40px rgba(0,0,0,.15);
+
+
+	
+
+	

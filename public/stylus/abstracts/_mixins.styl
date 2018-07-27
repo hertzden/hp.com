@@ -1,0 +1,77 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Mobile
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Large desktop
+
+breakpoint arguement choices:
+- mobile
+- tab-portrait
+- tab-landscape
+- large-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+
+// respond()
+//     @media (max-width: 600px)
+//         {block}
+
+
+respond(breakpoint)
+    if breakpoint == mobile
+        @media only screen and (max-width: 37.5em) 
+            {block}
+    if breakpoint == tab-portrait
+        @media only screen and (max-width: 56.25em)
+            {block}
+    if breakpoint == tab-landscape
+        @media only screen and (max-width: 75em)
+            {block}
+    if breakpoint == large-desktop
+        @media only screen and (min-width: 112.5em)
+            {block}
+    if breakpoint == hover
+        @media only screen and (hover: none)
+            {block}
+    
+hover()
+    @media only screen and (hover: none)
+        {block}
+
+
+// IE11 fallbacks
+
+ie11()
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+        {block}
+
+
+
+
+
+
+
+
+

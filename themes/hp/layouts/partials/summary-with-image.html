@@ -1,0 +1,35 @@
+{{ $featured_image := .Params.featured_image }}
+      {{ if .Params.featured_image }}
+          {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+        {{ $featured_image := (trim $featured_image "/") | absURL }}
+        <div class="post--grid__image">
+          <a href="{{.URL}}" class="db grow">
+            <img src="{{ $featured_image }}" class="img" alt="image from {{ .Title }}">
+          </a>
+        </div>
+      {{ end }}
+      <div class="post--grid__body">
+        <time class="time" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- .Date.Format "Mon, January 2, 2006" -}}
+      </time>
+        <h2 class="post--grid__title">
+          <a href="{{.URL}}" class="post--grid__link">
+            {{ .Title }}
+            </a>
+        </h2>
+        <div class="post--grid__content">
+          {{ if .Description }}
+            {{ .Description }}
+          {{ else }}
+              {{ .Summary }}
+          {{ end }}
+         <!--  {{ if gt (len .Summary) 180 }}
+  
+  <p>{{slicestr .Summary 0 130}}</p>
+  
+
+{{ end }} -->
+        </div>
+         <a href="{{.URL}}" class="post--grid__readmore nav-item hvr-sweep-to-right">{{$.Param "read_more_copy" | default "read more" }} <i class="fa fa-angle-double-right" aria-hidden="true"></i> </a>
+      </div>
+
