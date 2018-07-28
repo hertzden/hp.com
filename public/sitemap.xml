@@ -3,31 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>http://harshitpurwar.com/blog/css-box-model/</loc>
+    <lastmod>2018-07-22T22:59:04+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://harshitpurwar.com/blog/</loc>
+    <lastmod>2018-07-22T22:59:04+05:30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/contact/</loc>
+    <loc>http://harshitpurwar.com/categories/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://harshitpurwar.com/</loc>
+    <lastmod>2018-07-22T22:59:04+05:30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://harshitpurwar.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

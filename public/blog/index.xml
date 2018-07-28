@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS</title>
-    <link>http://harshitpurwar.com/</link>
-    <description>Recent content on Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS</description>
+    <title>Blogs on Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS</title>
+    <link>http://harshitpurwar.com/blog/</link>
+    <description>Recent content in Blogs on Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Jul 2018 22:59:04 +0530</lastBuildDate>
     
-	<atom:link href="http://harshitpurwar.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://harshitpurwar.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

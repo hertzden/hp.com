@@ -1,6 +1,10 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
----
++++
 
+Author = "Harshit Purwar" 
+Description = "" 
+Resources = [] 
+draft = true 
+publishdate = "" 
+slug = ""
+
++++

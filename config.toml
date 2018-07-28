@@ -1,10 +1,10 @@
 baseURL = "http://harshitpurwar.com/"
+relativeURLs = true
 languageCode = "en-us"
 title = "Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS"
-theme = "hp"
+
 
 MetaDataFormat = "yaml"
-DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
@@ -21,3 +21,5 @@ disqusShortname = "harshitpurwar"
   facebook = ""
   twitter = "https://twitter.com/harshitpurwar"
   instagram = ""
+
+

@@ -2,10 +2,10 @@
 title: "Css Box Model"
 date: 2018-07-22T22:59:04+05:30
 featured_image: "/images/css-box-model.png"
-draft: true
+draft: false
 ---
 
-Welcome to my blog with some of my work in progress. I've been working on this blog where i will share my findings in HTML, CSS, JS and. Here i am starting this blog with a puzzle on the most basic and highly useful concept in CSS. 
+Welcome to my blog with some of my work in progress. I've been working on this blog where i will share my findings in HTML, CSS, JS and. Here i am starting this blog with a puzzle on the most basic and highly useful concept in CSS.
 
 <blockquote> Here a div which contains a text and it's output is 200px square of some color and text inside div is horizontally and vertically centre of box. </blockquote>
 
