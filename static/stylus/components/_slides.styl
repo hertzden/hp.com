@@ -1,0 +1,123 @@
+.slides
+  display: flex;
+  //background: #6c5b7b
+  background: linear-gradient(to right, #ffd452, #6c5b7b, #355c7d)
+  padding: 2rem
+  margin: 3rem
+  border-radius: 3px
+  +respond(mobile)
+    margin: 0
+    border-radius: 0
+
+.thumbnails
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  +respond(mobile)
+    display: none
+
+.thumbnails li {
+  flex: auto;
+}
+.thumbnails a {
+  display: block;
+}
+.thumbnails img {
+  width: 30vmin;
+  height: 16vmin;
+  //filter: blur(1px)
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.slides__list
+  overflow: hidden;
+  width: 100vmax;
+  height: 100vmin;
+  +respond(mobile)
+    overflow: visible
+    height: auto
+
+.slides__list li
+  width: 78vmax;
+  height: 100vmin;
+  position: absolute;
+  z-index: 1;
+  +respond(mobile)
+    width: auto
+    height: auto
+    position: static
+
+.slides__list img
+  height: 96vmin;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+  +respond(mobile)
+    height: auto
+
+.irayo 
+    &.thumbnails img
+        width: 33vmin;
+        height: 19vmin;
+    .slides__list
+        height: 82vmin;
+        +respond(mobile)
+          height: auto
+    .slides__list li
+        width: 77vmax
+        +respond(mobile)
+          width: auto
+    .slides__list img
+        height: 74vmin
+
+.slides__list li:target {
+  z-index: 3;
+  -webkit-animation: slide 1s 1;
+}
+
+.slides__list li:not(:target) {
+  -webkit-animation: hidden 1s 1;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@-webkit-keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+@keyframes hidden {
+  0% {
+    z-index: 2;
+  }
+  100% {
+    z-index: 2;
+  }
+}
+

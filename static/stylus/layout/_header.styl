@@ -4,6 +4,10 @@
 		padding: 6rem 3rem
 	&--single
 		padding: 2rem 3rem
+	&-menu
+		grid-template-columns: 1fr 220px
+		.nav-item
+			padding: 0.5rem 2.5rem
 
 @media only screen and (min-width: 320px) and (max-width: 768px)
 	.header--main
@@ -71,6 +75,7 @@
 	color: color02
 	border: 1px solid #ddd
 	padding: 0.5rem 1.5rem
+	margin-right: 1rem
 	+respond(mobile)
 		font-size: 1.6rem
 	&:hover

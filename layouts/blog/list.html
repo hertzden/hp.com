@@ -1,0 +1,28 @@
+{{ define "main" }} 
+
+    {{ .Content }}
+  
+
+  <div class="main-container grid">
+  <div class="post--grid__container grid">
+
+    <div class="post--grid__body">
+      <ul class="post-list">
+        {{ range .Pages }}
+        <li class="post">
+          <div class="post__header">
+            <time class="time" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- .Date.Format "Mon, January 2, 2006" -}}
+      </time>
+            <h2 class="post--grid__title">
+              <a href="{{.RelPermalink}}" class="post--grid__link">{{ .Title }}</a>
+            </h2>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </div>
+</div>
+{{ end }}

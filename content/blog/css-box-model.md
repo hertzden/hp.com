@@ -1,11 +1,12 @@
 ---
-title: "Css Box Model"
-date: 2018-07-22T22:59:04+05:30
+date: 2017-10-10T22:59:04+05:30
+title: "CSS Box Model"
+description: "CSS box model is one of the most important concept in CSS, the backbone of each and every layout on web."
 featured_image: "/images/css-box-model.png"
 draft: false
 ---
 
-Welcome to my blog with some of my work in progress. I've been working on this blog where i will share my findings in HTML, CSS, JS and. Here i am starting this blog with a puzzle on the most basic and highly useful concept in CSS.
+CSS box model is one of the most important concept in CSS, the backbone of each and every layout on web. Let's solve a puzzle around it.
 
 <blockquote> Here a div which contains a text and it's output is 200px square of some color and text inside div is horizontally and vertically centre of box. </blockquote>
 

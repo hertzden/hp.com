@@ -1,13 +1,15 @@
 <header class="header header--single">
   <div class="container">
-    <div class="grid grid-auto">
+    <div class="grid header-menu">
       <div class="logo-box">
         <a href="{{ .Site.BaseURL }}" class="text-center logo">
-          <img src="/images/hp-logo-100.png" />
+          <img src="/images/hp-logo-small.png" />
           <h1 class="header__title sr-only">{{ .Site.Title }}</h1>
         </a>
       </div>
-      <nav class="nav nav-single"><a href="#" class="nav-item hvr-sweep-to-right">About <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></nav>
+      <nav class="nav nav-single"><a href="/blog" class="nav-item hvr-sweep-to-right">Blog <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      <a href="/work" class="nav-item hvr-sweep-to-right">Work <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+      </nav>
        </div>
   </div>
 </header>

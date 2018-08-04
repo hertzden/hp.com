@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    <body>
+    <body class="">
   		  {{ if .IsHome -}}
         {{- partial "header.html" . -}}
         {{- else -}}
         {{- partial "page-header.html" . -}}
         {{- end }}
-        <main class="main">
+        <main class="{{ cond (eq .Section "work") "main main-work" "main" }}">
         {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
