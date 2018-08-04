@@ -1,7 +1,7 @@
 baseURL = "https://harshitpurwar.com/"
 relativeURLs = true
 languageCode = "en-us"
-title = "Harshit Purwar: UX Engineer, Design System, CSS, HTML5, JS"
+title = "Harshit Purwar"
 
 
 MetaDataFormat = "yaml"
@@ -17,7 +17,7 @@ disqusShortname = "harshitpurwar"
   filename = "sitemap.xml"
 
 [params]
-  description = "UX"
+  description = "UX Engineer, Design System, CSS Modules, Styled Component, CSS, HTML5, JS"
   facebook = ""
   twitter = "https://twitter.com/harshitpurwar"
   instagram = ""
