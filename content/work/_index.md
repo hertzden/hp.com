@@ -26,7 +26,7 @@ keywords: ["portfolio", "JavaScript", "CSS3", "HTML5"]
       </div>
       <div class="work__body">
         <h2 class="work__name">Project: Irayo</h2>
-        <p><strong>Description:</strong> Uzio is benefits and HR management system</p>
+        <p><strong>Description:</strong> Irayo is SEO automation tool</p>
         <p>Workflow Design, Front End Development</p>
         <div class="work__links">
           <div>Link: <a href="https://app.uzio.com" target="_blank">irayo.com</a></div>
