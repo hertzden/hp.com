@@ -9,3 +9,6 @@ draft: false
 Pure CSS carousel, no javascritpt.
 
 <blockquote> Here a div which contains a text and it's output is 200px square of some color and text inside div is horizontally and vertically centre of box. </blockquote>
+
+
+<iframe src="https://player.vimeo.com/video/278114859?api=1&player_id=vimeo-player-1" id="vimeo-player-1" data-progress="true" width="543" height="306" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
