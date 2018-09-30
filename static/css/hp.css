@@ -32,10 +32,6 @@ body {
     padding: 0;
   }
 }
-::selection {
-  background-color: color-primary;
-  color: color-white;
-}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
