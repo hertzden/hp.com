@@ -313,8 +313,14 @@ h3 {
   margin: 0;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.4rem;
   font-weight: 500;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.4rem;
 }
 h4 {
   font-family: "Exo 2", sans-serif;
@@ -327,8 +333,9 @@ h4 {
   text-transform: uppercase;
 }
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 1rem 0;
+  line-height: 3.5rem;
 }
 blockquote {
   background: #f9f9f9;
@@ -439,6 +446,11 @@ hr {
   .a-hideMobile {
     display: none;
   }
+}
+code {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 2rem;
 }
 .modal .checkbox {
   display: none;
@@ -1139,6 +1151,9 @@ hr {
 }
 .post--grid:hover .post--grid__link {
   color: #222950;
+}
+.article {
+  margin-bottom: 2rem;
 }
 .article__header h1 {
   display: flex;
