@@ -38,7 +38,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #2f2f2f;
-  background: #f6f3f2;
+  background: rgba(246,243,242,0);
 }
 @media only screen and (max-width: 37.5em) {
   body {
